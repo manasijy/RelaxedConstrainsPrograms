@@ -1,0 +1,107 @@
+This list of programs have specific purpose. Program and what they are for is listed below:
+
+(I) M_RDTD45
+
+
+
+
+M_RDTD: This program calculates taylor factors (M). 
+
+As input it asks for either of the: 
+
+1) Ideal texture component i.e. {hkl}<uvw>
+2) Orientation file from the bulk texture measurement. This file should be a .txt file with euler angles listed in columns.
+3) External strain tensor.
+
+As output it gives taylor factor values in RD, TD and 45 to RD direction tensile tests.
+
+
+
+(II) M_theta
+
+
+
+M_theta: This program plots M variation with the orientation of the tensile axis from RD.
+
+As input it asks for:
+
+1) Ideal texture component i.e. {hkl}<uvw>
+2) orientation file from the bulk texture measurement. This file should be a .txt file with euler angles listed in columns.
+3) External strain tensor.
+
+As output it plots taylor factor values against the angle between tensile direction and the RD.
+
+
+(III)  M_ro
+
+
+
+M_ro: This program plots M variation with ro, Where ro=-e_w/e_l 
+
+As input it asks for:
+
+1) Ideal texture component i.e. {hkl}<uvw>
+2) orientation file from the bulk texture measurement. This file should be a .txt file with euler angles listed in columns.
+
+As output:
+
+1) It plots taylor factor values against ro values.
+2) This it does for uniaxial loading along RD, TD and 45 to RD.
+3) It also gives r values for the three directions.
+4) It also calculates r bar value.  
+
+
+(IV) ITC2euler
+
+
+
+ITCtoeuler: This program calculates euler angles phi1, phi, phi2 for the given ideal texture component {hkl}<uvw>
+
+Input: ideal texture component {hkl}<uvw> as string 'h k l u v w'
+
+output: euler angles phi1, phi, phi2
+
+
+(V) e_xtal_miller
+
+
+e_xtal_miller: This program transforms the external strain to the crystal reference frame.
+
+Input: This program asks for the external strain as input.It aslo asks the crystal orientation with respect to the external reference frame in hkl uvw format.
+
+Output: This program gives out the strain tensor in the crystal reference frame. 
+
+
+(VI) N_xtal
+
+N_xtal: This program calculates the precipitate strengthening factor in the RD, TD and 45 to RD direction for a crystal.
+
+Input: As input it asks for the external strain tensor and the orientation of the crystal in the sample reference frame.
+
+Output: It gives out Nbar values for RD, TD and 45 from RD directions.
+
+
+(VII) N_bar
+
+N_bar: This program calculates the average N value for the bulk material.
+
+Input: It asks for external strain tensor and the orientation file from the bulk texture measurement. This file should be a .txt file with euler angles listed in columns.
+
+Output:O It gives out Nbar values for RD, TD and 45 from RD directions.
+
+
+(VIII) e_xtal_euler
+
+e_xtal_euler: This program calculates the strain tensor in crystal reference frame.
+
+Input: This program askes for external strain condition. It also asks for the text file containing orientation of the crystal in the euler angle format.
+
+Output: The strain tensor in the crystal reference frame is given out in matrix form on the matlab prompt screen.The strain tensor is calculated for the three choices of the x axis of the external strain: RD, TD and 45 from RD. 
+
+(IX) yield_locus
+
+yield_locus: This program draws the yield locus for a orientation data file
+
+(X) yield_locus_allstates 
+
+yield_locus_allstates: It plots all the BH stress states on the sigmax and sigmay space
